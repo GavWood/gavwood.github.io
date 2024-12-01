@@ -1,0 +1,68 @@
+
+header h1 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.disclaimer {
+  font-style: italic;
+}
+
+
+.paper {
+  margin: 1em auto;
+  max-width: 800px;
+  padding: 2em;
+  background-color: #fff;
+  /* Remove the border definitions */
+}
+
+.abstract {
+  background-color: #f2f2f2;
+  padding: 1em;
+  margin: 1em 0;
+  /* Remove the border definitions */
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+.authors {
+  font-style: italic;
+  text-align: center;
+}
+
+.authors p {
+  margin: 0;
+}
+
+.authors a {
+  text-decoration: none;
+}
+
+.content {
+  padding: 1em;
+}
+
+
+figcaption {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    color: black;
+    text-align: center;  /* Centers the caption text */
+}
