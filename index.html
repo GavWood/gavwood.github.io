@@ -1,85 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Together Porting: Multi-user Locomotion in Social Virtual Reality</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BaaWolf</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    
+    <script>
+        const cssLink = document.createElement('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.href = `css/style.css?v=${new Date().getTime()}`;
+        document.head.appendChild(cssLink);
+    </script>
 </head>
 <body>
-  <div class="paper">
     <header>
-		<h1>Together Porting: Multi-user Locomotion in Social Virtual Reality</h1>
+        <div class="site-header">
+            <img class="site-image" src="images/logo.png" alt="BaaWolf Logo" />
+            <p id="site-tagline" class="site-tagline">
+                This is my github page. Visit here for my open source software libraries and research papers
+            </p>
+        </div>
     </header>
-    <section class="abstract">
-      <p class="disclaimer"><em>This website aims to encourage researchers and designers to explore new types of locomotion better aimed at Social VR. If you like our abstract below, please read the interactivity article available in <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tVR6WikAAAAJ&sortby=pubdate&citation_for_view=tVR6WikAAAAJ:vV6vV6tmYwMC" target="_blank">Interact 2023's proceedings</a>.</em></p>
 
+    <div id="home-page" class="content">
+        <div>
+            <h3>Hierarchy Separator</h3>
+            <p>
+                This Unity library will help you create aesthetic hierarchy separators for your Unity scene inside the Editor.
+            </p>
+            <img src="images/hierarchyseparator.png" alt="Hierarchy separator being used inside a Unity project" />
+            <p>            
+                You can add it to your project using the option <span style="font-weight: 500; color: #007BFF;">Install package from git URL</span>. Source code and package at https://github.com/gavwood/HierarchySeparator
+            </p>                
+        </div>
+        <div>
+            <h3>Together Porting</h3>
+            <p>
+                Together Porting was a demonstration at Interactivity showcasing locomotion techniques for social VR, specifically designed to improve group interactions in virtual environments. Read about it here:
+                <a href="https://github.com/gavwood/togetherporting.html">https://github.com/gavwood/togetherporting.html</a>
+            </p>
+            <img src="images/togetherporting.png" alt="Showing stacked reticles in teleporting" />
+        </div>
+    </div>
 
-	<h2>Abstract</h2>
-      <p>We present a design prototype that demonstrates new locomotion techniques for social virtual reality experiences. Specifically, we
-		showcase three teleportation-based techniques which, together, support
-		users as they join other groups of people, and help them move together
-		in virtual environments. The new interactions include a technique to
-		join a group with option for adjacency, the ability to <q>reverse teleport</q>
-		a user to your own group, and finding a consensus on where to teleport together. We argue that our new locomotion techniques maintain
-		the simplicity of current teleportation-based techniques while supporting
-		new interactions with people. We present our design prototype so that
-		we can explore how new teleportation-based techniques can be designed
-		to better support prosocial behaviour, but also highlight their potential
-		to disrupt social experiences in social VR.
-	</p>
-	
-	<p class="keywords"><strong>Keywords:</strong> SocialVR; Locomotion; Teleportation; Multi-User; Virtual Reality.</p>    
-
-	</section>
-	
-	<section class="content">
-		<h2>1 Joining a group of people with adjacency</h2>
-		<p>
-			When teleporting we often use a small reticle on the ground and use point & click to navigate.
-			In our demo we allow target people to be selected. When the user moves they are teleported to a new position using an <a href="https://www.researchgate.net/figure/F-formation-arrangements-A-L-shaped-B-face-to-face-C-side-by-side-D_fig1_310819154" target="_blank">F-formation</a>.
-		    <figure>
-			<img src="images/fig1.png" alt="A user selects a target group using a curved teleport steam and tall reticle.">
-			<figcaption>Figure 1. A user selecting a target group.</figcaption>
-			</figure>
-		</p>
-
-		<h2>2 Reverse Teleporting</h2>
-		<p>
-			 Following the ability to move to a group, we might want to think about moving someone from a group to our position. This can again use an F-formation. We might use this when we need to coordinate movement with others quickly. However, thinking about consent is important. Designers should think about how you opt in or out of being reverse teleported.
-			 
-		    <figure>
-			<img src="images/fig2.png" alt="A user selects a target group using a curved teleport steam and tall reticle.">
-			<figcaption>Figure 2. Bringing another user to your position.</figcaption>
-			</figure>
-		</p>
-
-		<h2>3 Stacked Reticles: Together Porting with a consensus on destination</h2>
-		
-		<p>
-			Considering social teleporting or what we call Together-Porting we need to think about moving with others at the same time.
-			When teleporting together we allow an existing teleport reticle to be selected. From the perspective of this second user, we show where the first user is going but offset to where we were teleport to, ensuring that we can easily see a shared destination but avoiding ending up in the exact same space.
-			 
-		    <figure>
-			<img src="images/fig3.png" alt="A user selects another user's reticle to indicate they want to teleport to the same place.">
-			<figcaption>Figure 3. Teleporting with another user.</figcaption>
-			</figure></p>
-		
-		<hr> <!-- Horizontal line -->
-
-		<p class="contact-details">
-			<em>
-			<p>
-				Original work by Gavin Wood and Patrick Dickinson. For more information, please contact 
-				<a href="mailto:mail@baawolf.com">mail@baawolf.com</a>.
-			</p>
-			<p>
-				Last revision 18 Sept 2023 see
-				<a href="https://github.com/gavwood/togetherporting">https://github.com/gavwood/togetherporting</a>. 
-			</p>				
-			</em>
-		</p>
-	</section>
-
-
-  </div>
+    <footer>
+        <p>Contact: <a href="mailto:mail@baawolf.com">mail@baawolf.com</a></p>
+    </footer>
+  
 </body>
 </html>
