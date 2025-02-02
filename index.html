@@ -21,12 +21,16 @@
         <div class="site-header">
             <img class="site-image" src="images/logo.png" alt="BaaWolf Logo" />
             <p id="site-tagline" class="site-tagline">
-                This is my github page. Visit here for my open source software libraries and research papers
+                These are some of my open-source projects and research across Unity, game development and virtual reality.
             </p>
+        </div>
+        <div class="menu">
+            <div id="github-tab" class="active">GitHub Projects</div>
+            <div id="research-tab">Research</div>
         </div>
     </header>
 
-    <div id="home-page" class="content">
+    <div id="github-page" class="content">
         <div>
             <h3>Hierarchy Separator</h3>
             <p>
@@ -36,21 +40,51 @@
             <p>            
                 You can add it to your project using the option <span style="font-weight: 500; color: #007BFF;">Install package from git URL</span>. Source code and package at 
                 <a href="https://github.com/gavwood/HierarchySeparator">https://github.com/gavwood/HierarchySeparator</a>
-            </p>                
+            </p>    
         </div>
+    </div>
+
+    <div id="research-page" class="content" style="display: none;">
         <div>
             <h3>Together Porting</h3>
             <p>
-                Together Porting was a demonstration at Interactivity showcasing locomotion techniques for social VR, specifically designed to improve group interactions in virtual environments. Read about it here:
+                Together Porting was a demonstration at Interactivity showcasing locomotion techniques for social VR. This work was designed to improve group interactions in virtual environments.
+            </p>
+                <img src="images/togetherporting.png" alt="Showing stacked reticles in teleporting" />
+            <p>
+                Read about it here:
                 <a href="https://gavwood.github.io/togetherporting.html">https://gavwood.github.io/togetherporting.html</a>
             </p>
-            <img src="images/togetherporting.png" alt="Showing stacked reticles in teleporting" />
         </div>
     </div>
 
     <footer>
         <p>Contact: <a href="mailto:mail@baawolf.com">mail@baawolf.com</a></p>
     </footer>
-  
+
+    <script>
+        const githubTab = document.getElementById('github-tab');
+        const researchTab = document.getElementById('research-tab');
+        const githubPage = document.getElementById('github-page');
+        const researchPage = document.getElementById('research-page');
+        const siteTagline = document.getElementById('site-tagline');
+
+        githubTab.addEventListener('click', () => {
+            githubPage.style.display = 'block';
+            researchPage.style.display = 'none';
+            githubTab.classList.add('active');
+            researchTab.classList.remove('active');
+            siteTagline.innerHTML = 'Explore my open-source projects and research in game development and virtual reality.';
+        });
+
+        researchTab.addEventListener('click', () => {
+            githubPage.style.display = 'none';
+            researchPage.style.display = 'block';
+            researchTab.classList.add('active');
+            githubTab.classList.remove('active');
+            siteTagline.innerHTML = 'This page will contain research projects that I have worked on and have a software focus';
+        });
+    </script>
+
 </body>
 </html>
