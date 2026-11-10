@@ -1,68 +1,17 @@
-
-header h1 {
-  font-size: 1.7em;
-  font-weight: bold;
-  margin: 0.5em 0;
-  text-align: center;
-}
-
-body {
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
-
-.disclaimer {
-  font-style: italic;
-}
-
-
-.paper {
-  margin: 1em auto;
-  max-width: 800px;
-  padding: 2em;
-  background-color: #fff;
-  /* Remove the border definitions */
-}
-
-.abstract {
-  background-color: #f2f2f2;
-  padding: 1em;
-  margin: 1em 0;
-  /* Remove the border definitions */
-}
-
-header {
-  text-align: center;
-}
-
-header h1 {
-  margin-bottom: 0;
-}
-
-.authors {
-  font-style: italic;
-  text-align: center;
-}
-
-.authors p {
-  margin: 0;
-}
-
-.authors a {
-  text-decoration: none;
-}
-
-.content {
-  padding: 1em;
-}
-
-
-figcaption {
-    font-size: 0.9em;
-    margin-top: 0.5em;
-    color: black;
-    text-align: center;  /* Centers the caption text */
-}
+﻿.paper-nav { max-width: 50rem; margin: 0 auto; padding: 2rem 1.5rem 0; font-size: 1rem; }
+.paper { max-width: 50rem; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+.paper-header { margin-bottom: 2.5rem; }
+.paper-header .entry-note { color: var(--accent); margin: 0 0 0.75rem; font-size: 1rem; }
+.paper h1 { font-size: clamp(2.5rem, 6vw, 3.75rem); margin: 0 0 0.75rem; }
+.paper-subtitle { font-family: var(--font-display); font-weight: 450; font-size: clamp(1.25rem, 3vw, 1.65rem); line-height: 1.4; margin: 0 0 1rem; }
+.authors { color: var(--ink-soft); margin: 0; }
+.paper-intro { color: var(--ink-soft); }
+.abstract { background: var(--paper); border-left: 2px solid var(--line); padding: clamp(1.25rem, 4vw, 2rem); margin: 2.5rem 0 3rem; }
+.paper h2 { font-size: clamp(1.4rem, 3vw, 1.7rem); margin: 0 0 1rem; }
+.abstract p:last-child { margin-bottom: 0; }
+.keywords { color: var(--ink-soft); font-size: 0.95rem; }
+.paper-section { margin-top: 3rem; }
+.paper-section figure { margin: 1.75rem 0 0; }
+.paper-section img { width: 100%; border-radius: 3px; }
+.paper-section figcaption { color: var(--ink-soft); font-size: 1rem; text-align: center; padding-top: 0.75rem; }
+.paper-contact { color: var(--ink-soft); margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 1rem; }
