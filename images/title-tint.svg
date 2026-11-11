@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <title>A colour for every project</title>
+  <desc>Three illustrated editor windows, each with a different project name and title bar colour.</desc>
+  <defs>
+    <g id="editor">
+      <path fill="#20252c" d="M0 38h400v144a8 8 0 0 1-8 8H8a8 8 0 0 1-8-8Z"/>
+      <path fill="#292f38" d="M0 38h90v152H8a8 8 0 0 1-8-8Z"/>
+      <g fill="#626e7d">
+        <rect x="15" y="59" width="52" height="5" rx="2"/>
+        <rect x="23" y="77" width="48" height="5" rx="2"/>
+        <rect x="23" y="95" width="35" height="5" rx="2"/>
+        <rect x="23" y="113" width="43" height="5" rx="2"/>
+      </g>
+      <g fill="#9ab8c9">
+        <rect x="111" y="60" width="101" height="6" rx="3"/>
+        <rect x="127" y="80" width="151" height="6" rx="3"/>
+        <rect x="127" y="100" width="111" height="6" rx="3"/>
+        <rect x="143" y="120" width="164" height="6" rx="3"/>
+        <rect x="127" y="140" width="73" height="6" rx="3"/>
+      </g>
+    </g>
+  </defs>
+  <path fill="#eeeae2" d="M0 0h640v400H0z"/>
+  <g transform="translate(34 28)">
+    <use href="#editor"/>
+    <path fill="#0f4c96" d="M8 0h384a8 8 0 0 1 8 8v30H0V8a8 8 0 0 1 8-8Z"/>
+    <g fill="#fff" opacity=".7"><circle cx="17" cy="19" r="3"/><circle cx="29" cy="19" r="3"/><circle cx="41" cy="19" r="3"/></g>
+    <text x="200" y="24" fill="#fff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13">My game · Visual Studio Code</text>
+  </g>
+  <g transform="translate(120 104)">
+    <use href="#editor"/>
+    <path fill="#a6dcd4" d="M8 0h384a8 8 0 0 1 8 8v30H0V8a8 8 0 0 1 8-8Z"/>
+    <g fill="#15202b" opacity=".6"><circle cx="17" cy="19" r="3"/><circle cx="29" cy="19" r="3"/><circle cx="41" cy="19" r="3"/></g>
+    <text x="200" y="24" fill="#15202b" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13">Website · Visual Studio Code</text>
+  </g>
+  <g transform="translate(206 180)">
+    <use href="#editor"/>
+    <path fill="#5e1a80" d="M8 0h384a8 8 0 0 1 8 8v30H0V8a8 8 0 0 1 8-8Z"/>
+    <g fill="#fff" opacity=".7"><circle cx="17" cy="19" r="3"/><circle cx="29" cy="19" r="3"/><circle cx="41" cy="19" r="3"/></g>
+    <text x="200" y="24" fill="#fff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13">Title Tint · Visual Studio Code</text>
+  </g>
+</svg>
